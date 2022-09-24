@@ -107,6 +107,7 @@ body {
 	.pricing-plan {
 		border-bottom: none;
 		border-right: 1px solid #c4c1e0;
+		padding: 2.5rem 5rem;
 	}
 
 	.pricing-plan:last-child {
