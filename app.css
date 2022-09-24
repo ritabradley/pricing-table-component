@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	list-style: none;
 	margin: 0;
 	padding: 0;
 }
@@ -10,9 +11,11 @@ html {
 
 body {
 	align-items: center;
-	background-color: #7c73e6;
+	background-color: #c4c1e0;
+	color: #7c73e6;
 	display: flex;
 	flex-direction: column;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	justify-content: center;
 	min-height: 100vh;
 }
@@ -21,7 +24,63 @@ body {
 	background-color: #fafafa;
 	border-radius: 1rem;
 	display: flex;
-	flex-direction: row;
-	margin: 2rem;
-	padding: 5rem;
+	flex-direction: column;
+	max-width: 960px;
+	padding: 1.5rem 2.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.pricing-plan {
+	border-bottom: 1px solid #ffe9e3;
+}
+
+.pricing-plan:last-child {
+	border-bottom: none;
+}
+
+.pricing-img {
+	margin-bottom: 2.5rem;
+	max-width: 100%;
+}
+
+.pricing-header {
+	color: #757575;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.pricing-features {
+	margin: 5rem 0 2.5rem
+}
+
+.pricing-features-item {
+	border-bottom: 1px solid #c4c1e0;
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	padding: 1.5rem 0;
+}
+
+.pricing-features-item:last-child {
+	border-bottom: 1px solid #c4c1e0;
+}
+
+.pricing-price {
+	display: block;
+	font-size: 3.2rem;
+	font-weight: 700;
+}
+
+@media (min-width: 768px) {
+	.panel {
+		flex-direction: row;
+	}
+
+	.pricing-plan {
+		border-bottom: none;
+		border-right: 1px solid #c4c1e0;
+	}
 }
