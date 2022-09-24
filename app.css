@@ -10,9 +10,18 @@ html {
 
 body {
 	align-items: center;
-	background-color: #d62976;
+	background-color: #7c73e6;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	min-height: 100vh;
+}
+
+.panel {
+	background-color: #fafafa;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: row;
+	margin: 2rem;
+	padding: 5rem;
 }
